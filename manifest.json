@@ -1,0 +1,28 @@
+{
+  "name": "TabsCounter",
+  
+  "version": "1.0",
+  
+  "description": "This Chrome Extension counts the number of opened tabs.",
+  
+  "manifest_version": 2,
+  "incognito": "split",
+
+  "browser_action": {
+    "default_title": "TabsCounter"
+  },
+
+  "background": {
+    "scripts": ["counter.js"],
+    "persistent": false
+  },
+  
+  "permissions": [
+     "tabs",
+     "activeTab"
+   ],
+
+  "icons": {
+    "128": "icon.png"
+    }
+}
